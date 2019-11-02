@@ -1,12 +1,12 @@
 const Sequelize = require('sequelize');
-//add correct credentials here
-const sequelize = new Sequelize('database', 'user', 'password', {
-	host: '',
-	port: '',
+
+const sequelize = new Sequelize('capstone-cs467-2019', 'username', 'password', {
+	host: 'classmysql.engr.oregonstate.edu',
+	//port: '53755',
 	dialect: 'mysql',
-	dialectOptions: {
+	/*dialectOptions: {
         socketPath: "/var/run/mysqld/mysqld.sock"
-    },
+    },*/
 	define: {
 	timestamps: false
 	},
