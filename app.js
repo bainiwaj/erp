@@ -26,9 +26,9 @@ var User = require('./models/users.js');
 
 app.use(session({ 
   secret: 'lol', 
-  resave: true,
-  saveUninitialized: true,
-  cookie: { maxAge: 100 * 60 * 60 * 24 * 30} //30 days
+  resave: false,
+  saveUninitialized: false,
+  cookie: { maxAge: 60 * 60 * 24 * 30 * 100} //30 days
 }));
 
 app.use(passport.initialize());
